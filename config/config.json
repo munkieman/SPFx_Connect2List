@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "connect-2-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/connect2List/Connect2ListWebPart.js",
+          "manifest": "./src/webparts/connect2List/Connect2ListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Connect2ListWebPartStrings": "lib/webparts/connect2List/loc/{locale}.js"
+  }
+}

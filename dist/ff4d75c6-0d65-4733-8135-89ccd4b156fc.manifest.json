@@ -1,0 +1,65 @@
+{
+  "id": "ff4d75c6-0d65-4733-8135-89ccd4b156fc",
+  "alias": "Connect2ListWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "connect2list"
+      },
+      "description": {
+        "default": "connect2list description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "connect2list"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "connect-2-list-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "connect-2-list-web-part": {
+        "type": "path",
+        "path": "dist/connect-2-list-web-part.js"
+      },
+      "Connect2ListWebPartStrings": {
+        "defaultPath": "lib/webparts/connect2List/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "version": "1.8.2",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+      }
+    }
+  }
+}
